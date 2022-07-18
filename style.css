@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
 :root {
     --primary-color: #dd499d;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 * {
@@ -9,9 +12,7 @@
 }
 
 body {
-    margin-left: 100px;
-    margin-right: 100px;
-    
+    margin: 0px 150px;
 
 }
 
@@ -26,9 +27,6 @@ body {
 
 
 header {
-    padding-left: 2%;
-    padding-right: 3.8%;
-    padding-top: 1.5%;
     width: 100%;
     height: 25%;
     align-items: center;
@@ -36,7 +34,8 @@ header {
     justify-content: space-between;
     background-color: white;
     font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    margin: 35px 0;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
 
 }
 
@@ -44,7 +43,7 @@ nav li {
     display: inline;
     margin: 15px;
     font: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     color: black;
 }
 
@@ -56,10 +55,7 @@ a {
 .botao {
     border: 2px solid var(--primary-color);
     border-radius: 10px;
-    padding-left: 2.2em;
-    padding-right: 2.2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: .8em 2.5em;
     font-weight: bold;
     color: var(--primary-color);
     transition: 0.7s;
@@ -81,36 +77,48 @@ a {
 .principal {
     color: var(--primary-color);
     display: flex;
-
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.people-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .imagem-homem {
     align-items: right;
-    width: 50em;
-    padding-top: 1.5%;
-    padding-right: 5%;
-
-
+    width: 750px;
+    height: 750px;
 }
 
 .texto-principal {
+    margin-top: 70px;
     width: 100%;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 7em;
-    text-align: left;
-    padding-top: 7%;
-    padding-left: 5%;
+    color: #230F0F;
+    font-weight: 800;
 
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 90px;
+    text-align: left;
+    line-height: 135%;
 }
 
 .texto-secundario {
-    color: #4F4F4F;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 5%;
-    padding-top: 10%;
-    font-size: 2em;
-
+    color: #230F0F;
+    opacity: 0.8;
+    font-weight: 500;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 26px;
+    line-height: 165%;
 }
 
 .explorer-path{
@@ -119,7 +127,7 @@ a {
     padding-left: 5%;
     padding-top: 3%;
     padding-bottom: 8%;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .botao3{
     border: 2px solid var(--primary-color);
@@ -144,26 +152,58 @@ a {
     border-radius: 50%;
     display: inline-flex;
     
+}
+.container-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 340px;
+}
+.class-marcas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4em;
+    margin: 100px 0;
+    
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.class-marcas h2 {
+    line-height: 1.5;
+    font-weight: 700;
+    color: #230F0F;
+}
+.container-SecondPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 150px;
+}
+
+.container-texto h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.5;
+    color: #230F0F;
+}
+
+.container-texto p {
 
 }
-.countainer-img{
-    padding-bottom: auto;
-    padding-top: 30px;
-    padding-left: 5%;
-    margin-right: 20px;
+
+.container-marcas {
     display: flex;
     justify-content: space-between;
 }
-.class-marcas{
-    padding-left: 5%;
-    font-size: 2em;
-    padding-top: 5%;
-    padding-bottom: 3%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.countainer-SecondPart{
-    display: flex;
-}
-.countainer-texto{
-    padding-left: 4em;
+
+.container-marcas img {
+    height: 50px;
+    margin: 0px 40px;
 }
